@@ -10,4 +10,4 @@ def test_hello_endpoint():
 def test_broken_endpoint():
     with app.test_client() as client:
         response = client.get('/hello')
-        assert response.data.decode('utf-8') == 'Hello, Broken!'  # Intentionally wrong; AI can fix by changing to 'Hello, World!'
+        assert response.data.decode('utf-8') == 'Hello, World!'  # Intentionally wrong; AI can fix by changing to 'Hello, World!'
